@@ -45,7 +45,8 @@ app = FastAPI()
 
 origins = {
     "http://localhost:3000",
-    "http://www.intaniaverse.com"
+    "http://www.intaniaverse.com",
+    "http://intaniavese.com"
 }
 
 app.add_middleware(
