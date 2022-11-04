@@ -17,7 +17,7 @@ mongodb_uri = 'mongodb+srv://loyar:l85WoPCln2z0Aefh@cluster0.dh0g9cd.mongodb.net
 port = 8000
 client = MongoClient(mongodb_uri, port)
 db = client["VerseUser"]
-
+ 
 
 class User(BaseModel):
     firstname: str
@@ -46,7 +46,7 @@ app = FastAPI()
 origins = {
     "http://localhost:3000",
     "http://www.intaniaverse.com",
-    "http://intaniavese.com"
+    "http://intaniaverse.com"
 }
 
 app.add_middleware(
